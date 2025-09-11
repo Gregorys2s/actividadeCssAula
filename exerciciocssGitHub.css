@@ -6,3 +6,21 @@ h1,h2  {color: #0f172a;}
 h1 {letter-spacing: 2px;}
 p {line-height: 1.6;}
 button {text-transform: uppercase;}
+
+/*Minha Parte: Felipe Yuji*/
+button{
+    border-style: none;                   /* Exercicio 6*/
+    border-radius: 6px;
+    
+    cursor:pointer;                       /* Exercicio 9*/
+
+    transition: all 0.3s ease-in-out;     /* Exercicio 10*/
+}
+
+.cartao{
+    width: 90%;                           /* Exercicio 7 */
+}
+
+h2{
+    line-height: 1.8;          /* Exercicio 8 */
+}
