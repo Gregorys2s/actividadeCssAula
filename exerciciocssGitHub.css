@@ -24,3 +24,26 @@ button{
 h2{
     line-height: 1.8;          /* Exercicio 8 */
 }
+
+p{
+    color: #89d42c; /*apneas esta cor para perceber que mudou*/
+}
+
+h2 {
+    border-bottom: 15px  solid black;
+    border-width: 5px;
+}
+
+header{
+    text-align: center;
+}
+
+#cabecalho-principal{
+   
+    margin: 0 auto;
+    width: 10%;
+}
+
+.cartao .info{
+    border-bottom: 2px dashed #94a3b8;
+}
