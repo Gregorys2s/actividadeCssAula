@@ -26,7 +26,7 @@ h2{
 }
 
 p{
-    color: #89d42c; /*apneas esta cor para perceber que mudou*/
+    color: #d42cb5; /*apneas esta cor para perceber que mudou*/
 }
 
 h2 {
@@ -46,4 +46,26 @@ header{
 
 .cartao .info{
     border-bottom: 2px dashed #94a3b8;
+}
+.cartao p {
+    background-color: #f1f5f9;
+}
+
+nav a {
+    font-weight: bold;
+}
+
+.cartao:nth-child(3) {
+    display: none;
+}
+
+.cartoes-container {
+    display: flex;
+    gap: 20px;
+}
+
+#rodape-principal {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
