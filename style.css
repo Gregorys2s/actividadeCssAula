@@ -18,18 +18,18 @@ h1
 #imagem_do_inicio  
 {
     position: absolute;
-    right: 50px;
-    top: 60px;
+    right: 80px;
+    top: 80px;
     display: flex;
     justify-content: center;
 }
 #imagem_do_inicio img{
     display: block;
     width: 70%;
-    height: 40%;
+    height: 50%;
 }
 
-#botões 
+#divBotoes
 {
     position: relative;
     width: 250px;
@@ -38,6 +38,15 @@ h1
     top: 20px;
     display: flex;
     gap: 30px;
-    
 }
 
+#botaoOrcamentoIncio
+{
+    background-color: orangered;
+    border-radius: 10px;
+}
+
+.botoes 
+{
+
+}
