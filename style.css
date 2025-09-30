@@ -32,10 +32,12 @@ h1
 #botões 
 {
     position: relative;
-    width: 50%;
-    height: 50%;
-    left: 150px;
+    width: 250px;
+    height: 55px;
+    left: 170px;
     top: 20px;
     display: flex;
-    gap: 40px;
+    gap: 30px;
+    
 }
+
