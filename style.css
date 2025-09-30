@@ -1,6 +1,46 @@
-body 
+body
 {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;/* Remove a margem padrão do body */
+    min-height: 100vh;
+    width: 100vw; /* Garante que o corpo ocupa toda a largura da viewport */
+    box-sizing: border-box;/* Inclui bordas e padding na largura total */
+    padding-top: 60px;/* Adiciona espaço abaixo da navbar */
+}
+body::-webkit-scrollbar {/*webkit é o motor de renderização usado pelo Chrome e outros navegadores baseados em Chromium*/
+    display: none; /* Esconde a barra de rolagem */
+}   
+#navBar
+{
+    width: 99%;/* Ajuste para evitar overflow devido à borda */
+    height: 70px;/* Altura da navbar */
+    top: 0;/* Fixa a navbar no topo */
+    border: 10px solid red;/* Borda de 10px na cor vermelha para facilitar na criacao e ajuste da navbar remover posteriormente*/
+    position: fixed;/* Fixa a navbar no topo da página */
+    background-color: black;/*alterar a cor de fundo da navbar*/
+}
+#navBar img
+{
+    height: 70%;/* Ajusta a altura da imagem para 70% da altura da navbar */
+    width: auto;/* Mantém a proporção da imagem */
+    margin: 5px;/* Espaçamento ao redor da imagem */
+    float: left;/* Alinha a imagem à esquerda */
+}
+#nomeEmpresa
+{
+    color:  #FFC42C;/* Cor do texto em amarelo proximo da cor da logo*/
+    font-size: xx-large;/* Tamanho da fonte */
+    margin: 10px;/* Espaçamento ao redor do texto */
+    float: left;/* Alinha o texto à esquerda */
+    padding-right: 50px;/* Espaçamento à direita do texto */
+    border-right: 2px solid white;/* Linha vertical branca à direita do texto alterar a cor para */
+    line-height: 50px;/* Alinha o texto verticalmente ao centro da navbar */
+}
+.anchorNav
+{
+    font-size: larger;/* Tamanho da fonte */
+    text-decoration: none;/* Remove o sublinhado dos links */
+    color: chocolate;/*alterar a cor dos links posteriormente*/
 }
 
 h1 ,h3
@@ -44,9 +84,4 @@ h1
 {
     background-color: orangered;
     border-radius: 10px;
-}
-
-.botoes 
-{
-
 }
