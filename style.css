@@ -1,5 +1,6 @@
 body
 {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;/* Remove a margem padrão do body */
     min-height: 100vh;
     width: 100vw; /* Garante que o corpo ocupa toda a largura da viewport */
@@ -42,15 +43,45 @@ body::-webkit-scrollbar {/*webkit é o motor de renderização usado pelo Chrome
     color: chocolate;/*alterar a cor dos links posteriormente*/
 }
 
+h1 ,h3
+{
+    padding-left: 100px;
+    margin: 0;
+}
+
+h1 
+{
+    padding-top: 140px;
+    margin-bottom: 20px;
+}
+
 #imagem_do_inicio  
 {
-    right: 50px;/* Espaçamento da imagem em relação à borda direita */
-    top: 60px;/* Espaçamento da imagem em relação ao topo */
-    display: flex;/* Usa Flexbox para centralizar a imagem */
-    justify-content: center;/* Centraliza horizontalmente */
+    position: absolute;
+    right: 80px;
+    top: 80px;
+    display: flex;
+    justify-content: center;
 }
-#imagem_do_inicio img{/* Seleciona a imagem dentro do div */
-    display: block;/* Remove o espaço embaixo da imagem */
-    width: 70%;/* Ajusta a largura da imagem */
-    height: 40%;/* Ajusta a altura da imagem */
+#imagem_do_inicio img{
+    display: block;
+    width: 70%;
+    height: 50%;
+}
+
+#divBotoes
+{
+    position: relative;
+    width: 250px;
+    height: 55px;
+    left: 170px;
+    top: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+#botaoOrcamentoIncio
+{
+    background-color: orangered;
+    border-radius: 10px;
 }
