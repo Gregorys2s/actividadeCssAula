@@ -62,6 +62,11 @@ h1
     justify-content: space-between;
     align-items: flex-start;
 }
+#textoColor 
+{
+    color: #8B4513;
+}
+
 #imagem_do_inicio  
 {
     position: relative;
@@ -79,8 +84,8 @@ h1
 #divBotoes
 {
     position: relative;
-    width: 250px;
-    height: 55px;
+    width: 290px;
+    height: 65px;
     left: 170px;
     top: 20px;
     display: flex;
@@ -89,6 +94,10 @@ h1
 
 #botaoOrcamentoIncio
 {
-    background-color: orangered;
+    background-color: #8B4513;
+}
+
+.botoes 
+{
     border-radius: 10px;
 }
