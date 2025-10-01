@@ -12,10 +12,10 @@ body::-webkit-scrollbar {/*webkit é o motor de renderização usado pelo Chrome
 }   
 #navBar
 {
-    width: 99%;/* Ajuste para evitar overflow devido à borda */
+    width: 100%;/* Ajuste para evitar overflow devido à borda */
     height: 70px;/* Altura da navbar */
     top: 0;/* Fixa a navbar no topo */
-    border: 10px solid red;/* Borda de 10px na cor vermelha para facilitar na criacao e ajuste da navbar remover posteriormente*/
+    /*border: 10px solid red;/* Borda de 10px na cor vermelha para facilitar na criacao e ajuste da navbar remover posteriormente*/
     position: fixed;/* Fixa a navbar no topo da página */
     background-color: black;/*alterar a cor de fundo da navbar*/
 }
@@ -54,10 +54,22 @@ h1
     padding-top: 140px;
     margin-bottom: 20px;
 }
+#inicio
+{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#textoColor 
+{
+    color: #8B4513;
+}
 
 #imagem_do_inicio  
 {
-    position: absolute;
+    position: relative;
     right: 80px;
     top: 80px;
     display: flex;
@@ -72,8 +84,8 @@ h1
 #divBotoes
 {
     position: relative;
-    width: 250px;
-    height: 55px;
+    width: 290px;
+    height: 65px;
     left: 170px;
     top: 20px;
     display: flex;
@@ -82,6 +94,10 @@ h1
 
 #botaoOrcamentoIncio
 {
-    background-color: orangered;
+    background-color: #8B4513;
+}
+
+.botoes 
+{
     border-radius: 10px;
 }
