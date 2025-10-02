@@ -2,20 +2,27 @@ body
 {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 100vh;/*100% da viewport*/
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;/*inclui as bordas e o padding na largura e altura totais do elemento*/
 }
 
 .interno
 {
-    position: fixed;
-    top: 10%;
-    left: 7.5%;
-    width: 85%;
-    height: 90%;
-    background-color: black;
+
+
+
+
+
+
+
+
+    top: 15%;
+    left: 15%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, #a8a2a2 20%, #738e45 80%);
     z-index: 1000;
     clip-path: polygon(
     0 0,         /* Canto superior esquerdo */
@@ -30,8 +37,79 @@ body
 
 .externo
 {
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    background-color: red;
+    width: 100%;/*100% da viewport*/
+    height: 100%;/*100% da viewport*/
+    z-index: 100;/*coloca atras do interno*/
+    background-color: red;/*cor de fundo*/
+}
+
+#labelTitulo
+{
+    position: relative;
+    width: 25%;/*ajusta a largura conforme necessário*/
+    height: fit-content;/*ajusta a altura conforme o conteúdo*/
+    text-align: center;/*centraliza o texto*/
+    margin: 0;/*remove o margin auto e margin top*/
+    margin-bottom: 8%;/*espaçamento entre a div e o fundo */
+    margin-right: 5%;/*espaçamento entre a div e a borda direita*/
+}
+
+#tituloPrincipal
+{
+    font-family: 'Arial Black', Arial, sans-serif;/*fonte do titulo*/
+    font-style: italic;/*estilo da fonte*/
+    font-size: 4em;/*tamanho da fonte*/
+    color: rgb(255, 183, 58);/*cor da fonte*/
+    text-shadow: 2px 2px 4px #000000;/*sombra do texto*/
+    margin: 0;/*remove o margin*/
+    padding: 0;/*remove o padding*/
+}
+
+#GET
+{
+    width: 73%;/*ajusta a largura conforme necessário*/
+    height: fit-content;/*ajusta a altura conforme o conteúdo*/
+    font-size: 1em;/*tamanho da fonte*/
+    padding: 3px;/*espaçamento interno*/
+    border: #5c4f4f 2px solid;/*borda*/
+    border-radius: 12px;/*borda arredondada*/
+    color: #333; /* cor do texto */
+    background: linear-gradient(90deg, rgb(27, 241, 241) 0%, #fe1d1d 80%);/*cor de fundo com gradiente*/
+}
+
+#botaoBusca
+{
+    position: relative;/*necessário para o pseudo-elemento ::after*/
+    width: 25%;/*ajusta a largura conforme necessário*/
+    margin-top: 6px;/* espaçamento entre o input e o botão*/
+    height: fit-content;/*ajusta a altura conforme o conteúdo*/
+    font-size: 1em;/*tamanho da fonte*/
+    padding: 3px;/*espaçamento interno*/
+    border: #5c4f4f 2px solid;/*borda*/
+    border-radius: 12px;/*borda arredondada*/
+    color: #333; /* cor do texto */
+    background: linear-gradient(39deg, rgb(27, 241, 241) 0%, #FF6347 100%);
+    cursor: pointer;/*cursor de mãozinha*/
+    overflow: hidden;/*esconde o conteúdo que ultrapassa o botão*/
+}
+
+#botaoBusca::after/*pseudo-elemento para a animação de fundo*/
+/*after serve para adicionar conteúdo depois do elemento, usei para criar a animacao ja que transition nao estava funcionando*/
+{
+    content: "";/*necessário para o pseudo-elemento, basicamente o texto que fica depois da animacao mas ta ficando torto*/
+    position: absolute;/*necessário para posicionar o pseudo-elemento*/
+    inset: 0;/*posiciona o pseudo-elemento em cima do botão*/
+    background: linear-gradient(39deg, #FF6347 0%, rgb(27, 241, 241) 100%);/*cor de fundo com gradiente invertido*/
+    opacity: 0;/*inicia com opacidade 0*/
+    transition: opacity 0.3s linear;/*transição de opacidade*/
+    z-index: 0;/*coloca o pseudo-elemento atrás do botão*/
+}
+#botaoBusca:hover::after
+{
+    opacity: 1;/*quando o botão for hover, a opacidade do pseudo-elemento aumenta para 1*/
+}
+#botaoBusca span, #botaooBusca label, #botaoBusca input/*garante que o texto do botão fique acima do pseudo-elemento*/
+{
+    position: relative;/*necessário para posicionar o texto acima do pseudo-elemento*/
+    z-index: 1;/*coloca o texto acima do pseudo-elemento*/
 }
