@@ -8,6 +8,31 @@ body
     box-sizing: border-box;/*inclui as bordas e o padding na largura e altura totais do elemento*/
 }
 
+header /*barra do topo (barra do fundo)*/
+{
+    background-color: #333; /*a cor do fundo*/
+    padding: 0, 20px; /*a separação das bordas de fora*/
+}
+
+nav /*menu principal do navegar (nav)*/
+{
+    display: flex; /*coloca o logo na mesma linha do menu*/
+    justify-content: space-between ; /*coloca no tipo de ordem */
+    align-items: center; /*alinha ele de forma vertical ou horizontal*/
+    height: 68px; /*altura*/
+    width: 100%; /*largura*/
+}
+
+.logo 
+{}
+
+.menu 
+{
+    list-style: none; /*tira a lista de orden*/
+    display: flex; /*coloca os itens el linha*/
+    gap: 20px;
+}
+
 .interno
 {
     position: fixed;/*fica fixo na tela*/
